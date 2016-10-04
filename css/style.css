@@ -1,19 +1,8 @@
-.img-circle {
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    margin: 3%;
-    border: 2px solid white;
-}
-
 html, body {
   background: #c0392b; /*blue: #2980b9*/
-  /*background: linear-gradient(to left, #B993D6 , #8CA6DB);*/
   background-image: url(http://wallpoper.com/images/00/26/79/04/dark-textures_00267904.jpg);
-  /*background-image: url("images/bg-texture.jpg");*/
-  background-blend-mode:luminosity;
+  background-image: url("../images/bg.jpg");
+  background-blend-mode: luminosity;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -24,8 +13,16 @@ html, body {
   color: white;
 }
 
-footer, header {
+footer {
   height: 5%;
+}
+
+header {
+  height: 10%;
+}
+
+a {
+  color: #95a5a6;
 }
 
 .navbar {
@@ -33,6 +30,11 @@ footer, header {
   border-radius: 0%;
   border: 0px;
   width: 100%;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-static-top {
@@ -44,7 +46,7 @@ button.navbar-toggle {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.83); /*at one point was darker than the rest*/
   color: white;
 }
 
@@ -53,18 +55,18 @@ button.navbar-toggle {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.83);
   color: white;
 }
 
 .navbar-nav>li>a {
   color: white;
-  background-color: rgba(1,1,1,0.65);
+  background-color: rgba(1,1,1,0.83);
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   color: #e74c3c;
-  background-color: rgba(0,0,0,0.88);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .nav>li {
@@ -72,6 +74,10 @@ button.navbar-toggle {
 }
 .nav>li.active{
   border-bottom: 3px solid #e74c3c;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #8c8c8c;
 }
 
 .dropdown-menu>li>a {
@@ -112,7 +118,6 @@ ul.dropdown-menu {
 }
 
 .section-content {
-  /*margin: 5px;*/
   margin-left:15%;
   margin-right:15%;
   margin-top: 15px;
@@ -125,6 +130,7 @@ ul.dropdown-menu {
 .section-content p {
   padding: 0% 3%;
 }
+
 
 .spacer {
   width:20%;
@@ -166,23 +172,32 @@ img.logo {
   text-justify: auto;
 }
 
-/*a {
-  color: #444;
-  text-decoration: none;
-  position: relative;
+.img-circle {
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin: 3%;
+  border: 2px solid white;
 }
-a:hover:before {
-  clip: rect(0, 190px, 190px, 0);
+
+.project-grid-img {
+  margin: 5%;
+  max-width: 60%;
+  min-width: 25%;
+  max-height: 60%;
+  min-height: 50%;
 }
-a:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: attr(data-content);
-  display: inline-block;
-  color: #fff;
-  width: 100%;
-  clip: rect(0, 0, 190px, 0);
-  -webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 500ms;
-  transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 500ms;
+
+/*.img-thumbnail {
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin: 3%;
+  border: 2px solid white;
+  max-width: 25%;
+  max-height 25%;
 }*/

@@ -48,56 +48,55 @@ PURPOSE: Project page for personal website.
 
     <!-- WEBSITE CONTENT -->
     <header>
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#">!</a> -->
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./courses.html">Courses</a></li>
+              <!-- NAVIGATION BAR: Research -->
+              <li class="dropdown">
+                <a href="./research.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./research.html#bci">Brain-Computer Interaction (2014)</a></li>
+                  <li><a href="./research.html#pgp">Personal Genomics (2015)</a></li>
+                </ul>
+              </li>
+              <!-- NAVIGATION BAR: Projects -->
+              <li class="dropdown active">
+                <a href="./projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span><span class="sr-only">(current)</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./projects.html#claw">The Claw Animation (2013)</a></li>
+                  <li><a href="./projects.html#scrabble">Scrabble (2014)</a></li>
+                  <li><a href="./projects.html#kinoma">Kinoma (2014)</a></li>
+                  <li><a href="./projects.html#munchmate">MunchMate (2015)</a></li>
+                  <li><a href="./projects.html#hbs">Harvard Business School Work Time Summary Visualization (2015)</a></li>
+                  <li><a href="./projects.html#dory">Dory Fish Tank Interactable Animation (2015)</a></li>
+                  <li><a href="./projects.html#catastrohphe">CATastrohphe (2016)</a></li>
+                  <li><a href="./projects.html#mummys-return">Mummy's Return (2016)</a></li>
+                  <li><a href="./projects.html#pih-stork-solutions">PIH Stork Solutions (WHACK 2016)</a></li>
+                </ul>
+              </li>
+              <li><a href="https://drive.google.com/file/d/0B0dba4gXOazwc2tCT2NlbG1IYTQ/view?usp=sharing">Resume</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </header>
-
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" href="#">!</a> -->
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./courses.html">Courses</a></li>
-            <!-- NAVIGATION BAR: Research -->
-            <li class="dropdown">
-              <a href="./research.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="./research.html#bci">Brain-Computer Interaction (2014)</a></li>
-                <li><a href="./research.html#pgp">Personal Genomics (2015)</a></li>
-              </ul>
-            </li>
-            <!-- NAVIGATION BAR: Projects -->
-            <li class="dropdown active">
-              <a href="./projects.html" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span><span class="sr-only">(current)</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#claw">The Claw Animation (2013)</a></li>
-                <li><a href="#scrabble">Scrabble (2014)</a></li>
-                <li><a href="#kinoma">Kinoma (2014)</a></li>
-                <li><a href="#munchmate">MunchMate (2015)</a></li>
-                <li><a href="#hbs">Harvard Business School Work Time Summary Visualization (2015)</a></li>
-                <li><a href="#dory">Dory Fish Tank Interactable Animation (2015)</a></li>
-                <li><a href="#catastrohphe">CATastrohphe (2016)</a></li>
-                <li><a href="#mummys-return">Mummy's Return (2016)</a></li>
-                <li><a href="#pih-stork-solutions">PIH Stork Solutions (WHACK 2016)</a></li>
-              </ul>
-            </li>
-            <li><a href="https://drive.google.com/file/d/0B0dba4gXOazwc2tCT2NlbG1IYTQ/view?usp=sharing">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
 
     <!-- PERSONAL ICON IMG & NAME HEADER -->
     <img id="resume-icon" class="centered" src="images/resume-icon-white.png" alt="Resume Icon">
@@ -115,10 +114,57 @@ PURPOSE: Project page for personal website.
 
       <!-- THE CLAW ANIMATION (2013) -->
       <p>
-        <div id="claw" class="inline">
-          <img class="img-thumbnail" src="#" alt="???" title="??">
-          <img class="img-thumbnail" src="#" alt="???" title="??">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">
+            <img class="thumbnail project-grid-img"
+                 src="./images/projects/catastrophe.jpg"
+                 alt="CATastrophe"
+                 title="CATastrophe, GameJam Spring 2016">
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <a href="http://jdavis486.wixsite.com/treadlight-timer">
+              <img class="thumbnail project-grid-img"
+                 src="./images/projects/kinoma.png"
+                 alt="Kinoma"
+                 title="Kinoma, UIST 2015">
+               </a>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <img class="thumbnail project-grid-img"
+                 src="./images/projects/mummys-return.png"
+                 alt="Mummy's Return"
+                 title="Mummy's Return, Game built in Unity, DISAbroad Spring '16">
+          </div>
         </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">
+            <a href="http://devpost.com/software/whack_pih_team-7-8">
+            <img class="thumbnail project-grid-img"
+                 src="./images/projects/pih-stork-solutions.png"
+                 alt="PIH Stork Solutions"
+                 title="PIH Stork Solutions, Winner of Best Use of Vertica prize, WHACK 2016">
+               </a>
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <a href="http://cs.wellesley.edu/~jdavis4/cs307-graphics-project-final/project.html">
+            <img class="thumbnail project-grid-img"
+                 src="./images/projects/dory2.png"
+                 alt="Dory Fish Animation Screenshot"
+                 title="Dory Fish Tank Interactable Animation (2015) Screenshot">
+               </a>
+          </div>
+          <<div class="col-xs-6 col-sm-4">
+            <img class="thumbnail project-grid-img"
+                 src="./images/projects/#"
+                 alt="???"
+                 title="??">
+          </div>
+        </div>
+
+        <div id="claw" class="inline">
+              <img class="thumbnail" src="./images/jasmine+rey.jpg" width="100px" height="100px" alt="???" title="??">
+              <img class="thumbnail" src="./images/jasmine+rey.jpg" width="100px" height="100px" alt="???" title="??">
+          </div>
         <h3 class="section-header">The Claw Animation</h3>
         <p>explain</p>
       </p>
