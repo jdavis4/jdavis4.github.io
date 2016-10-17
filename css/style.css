@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 html, body {
   background: #c0392b; /*blue: #2980b9*/
   /*background-image: url(http://wallpoper.com/images/00/26/79/04/dark-textures_00267904.jpg);*/
@@ -11,6 +13,7 @@ html, body {
   align-items: center;
   overflow-x: hidden;
   color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer {
